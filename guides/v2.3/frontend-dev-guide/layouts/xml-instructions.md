@@ -26,6 +26,7 @@ Use these [layout instructions](https://glossary.magento.com/layout-instructions
 - Move a page element to another parent element.
 - Add content.
 - Remove a page element.
+- Arrange the element position.
 
 The basic set of instructions is the same for all types of layout files. This topic describes these basic instructions. For details about how they are used in a particular layout file type, please refer to the [Layout file types] topic.
 
@@ -42,7 +43,7 @@ Use the following layout instructions to customize your layout:
 - [`<remove>`](#fedg_layout_xml-instruc_ex_rmv)
 - [`<update>`](#fedg_layout_xml-instruc_ex_upd)
 - [`<argument>`](#argument)
-- [`<block vs container>`](#block_vs_container)
+- [`<block> vs <container>`](#block_vs_container)
 
 ### block {#fedg_layout_xml-instruc_ex_block}
 
@@ -100,6 +101,13 @@ Sample of usage in layout:
 ```
 
 This would add a new column to the page layout.
+
+#### Controlling children visibility
+
+The `output` attribute controls the visibility of the container's children elements.
+Set this value to `1` to render children content or `0` to disable the output of the entire container.
+
+Use this feature to make temporary changes to a store, such as disabling a section of the page for a sales event and re-enabling it after the event ends.
 
 ### block vs. container {#block_vs_container}
 

@@ -3,7 +3,6 @@ group: javascript-developer-guide
 subgroup: 3_Widgets
 title: List widget
 ---
-## Overview
 
 {%
 include note.html
@@ -12,7 +11,7 @@ content='The list widget is deprecated since version 2.2.0. As an alternative co
 %}
 
 Provides a way to move items, typically a list, from one content section to another.
-The content can be moved using buttons and links. 
+The content can be moved using buttons and links.
 
 The list [widget](https://glossary.magento.com/widget) source file is [lib/web/mage/list.js].
 
@@ -37,7 +36,7 @@ The list widget has the following options:
 Detailed description of each option follows.
 
 ### `addButton` {#l_addButton}
-Selector for the element used for item adding. 
+Selector for the element used for item adding.
 
 **Type**: String
 
@@ -53,7 +52,7 @@ Content destination selector.
 ### `itemCount` {#l_itemCount}
 Number of total items.
 
-**Type**: Integer 
+**Type**: Integer
 
 **Default value**: `0`
 
@@ -79,7 +78,7 @@ Alert message displayed when maximum limit is reached.
 **Default value**: `null`
 
 ### `removeButton` {#l_removeButton}
-Selector for the element used for item removing. 
+Selector for the element used for item removing.
 
 **Type**: String
 
@@ -125,7 +124,6 @@ If the `maxItems` option is set, hides or displays the **Add** button.
 
 ### `removeItem()` {#list_removeItem}
 Removes an item from the list.
-
 
 [lib/web/mage/list.js]: {{ site.mage2bloburl }}/{{ page.guide_version }}/lib/web/mage/list.js
 [Initialize JavaScript]: {{page.baseurl}}/javascript-dev-guide/javascript/js_init.html

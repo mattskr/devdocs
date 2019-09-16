@@ -4,8 +4,6 @@ subgroup: 3_Widgets
 title: PasswordStrengthIndicator widget
 ---
 
-## Overview {#password_strength_indicator_overview}
-
 The Magento password strength indicator [widget](https://glossary.magento.com/widget) provides immediate feedback on the validity and strength of a password while it is being typed.
 If the password is not strong enough, Magento prompts the user to choose a new password.
 
@@ -35,7 +33,7 @@ Where:
 
 - `#password-input` is the selector of the element for which PasswordStrengthIndicator is initialized.
 
-Phtml template file examples using script:
+The following example shows a PHTML file using the script:
 
 ```html
 <script>
@@ -44,7 +42,7 @@ Phtml template file examples using script:
         'passwordStrengthIndicator'
     ], function ($) {
         'use strict';
-        
+
         $("#password-input").passwordStrengthIndicator({
               "passwordStrengthMeterSelector":"[data-role=strength-meter]",
               "passwordStrengthMeterLabelSelector":"[data-role=strength-meter-label]"
@@ -68,7 +66,7 @@ The password strength indicator widget has the following options:
 
 Selector for the password input.
 
-**Type**: String 
+**Type**: String
 
 **Default value**: `[type=password]`
 
@@ -76,7 +74,7 @@ Selector for the password input.
 
 Selector for the password strength visualization block.
 
-**Type**: String 
+**Type**: String
 
 **Default value**: `[data-role=password-strength-meter]`
 
@@ -84,7 +82,7 @@ Selector for the password strength visualization block.
 
 Selector for the password strength visualization block label.
 
-**Type**: String 
+**Type**: String
 
 **Default value**: `[data-role=password-strength-meter-label]`
 
@@ -92,7 +90,7 @@ Selector for the password strength visualization block label.
 
 The selector for the form block.
 
-**Type**: String 
+**Type**: String
 
 **Default value**: `form`
 
@@ -100,7 +98,7 @@ The selector for the form block.
 
 The selector for the email input.
 
-**Type**: String 
+**Type**: String
 
 **Default value**: `input[type="email"]`
 

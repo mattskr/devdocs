@@ -16,9 +16,9 @@ CSS critical path configuration is located in **Stores** > Settings > **Configur
 
 Enable CSS critical path:
 
-    ```bash
-    bin/magento config:set dev/css/use_css_critical_path 1
-    ```
+```bash
+bin/magento config:set dev/css/use_css_critical_path 1
+```
 
 Make sure that there is a `critical.css` file for your theme. Other non-critical CSS files will be loaded asynchronously.
 
@@ -44,7 +44,7 @@ After non-critical CSS is loaded and applied, the spinner disappears. The spinne
 
 Introducing a critical path CSS to Magento leads to performance improvements:
 
-1. Eliminated render-blocking CSS resources. As a result, time for loading render-blocking resources decreases substantially. 
+1. Eliminated render-blocking CSS resources. As a result, time for loading render-blocking resources decreases substantially.
 
 ![CSS resources eliminated as render-blocking]({{ site.baseurl }}/common/images/critical_css_improvements1.png)
 

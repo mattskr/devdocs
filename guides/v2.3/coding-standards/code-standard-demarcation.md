@@ -291,7 +291,6 @@ HTML helper class names added in JavaScript REQUIRE underscore symbol ("_") at t
 <div class="sales-report _hidden">Content</div>
 ```
 
-
 **Unacceptable**
 
 ```html
@@ -324,66 +323,6 @@ this.element.parent().find('[data-action="edit"]').data('entity_id');
 - Reinstates emphasis on jQuery templates. For more information, see JavaScript Coding Best Practices.
 - Reduces long-term maintenance efforts by having markup code stored in one place.
 - Simplifies frontend debugging efforts.
-
-### You must not hard-code inline JavaScript in PHP classes
-
-- Reduces long term maintenance by having frontend business logic stored in one place.
-- Reduces the number of files to be modified.
-
-**Acceptable PHP file**
-
-```php
-...
-public function getSelectorOptions()
-{
-    return $selectorOptions;
-}
-...
-```
-
-**Acceptable PHTML template**
-
-```php
-...
-<div data-mage-init="{treeSuggest: [<?php echo $this->getSelectorOptions(); ?>]}"></div>
-...
-```
-
-or
-
-**Acceptable PHTML template**
-
-```php
-...
-<div data-role="treeSuggest"></div>
-<script type="text/x-magento-init">
-{
-    "[data-role='treeSuggest']": {
-        "treeSuggest": <?php echo $this->getSelectorOptions(); ?>
-    }
-}
-</script>
-...
-```
-
-**Unacceptable PHP file**
-
-```php
-...
-public function getAfterElementHtml()
-{
-    return <<<HTML
-<script>
-jQuery('#{$htmlId}-suggest').treeSuggest({$selectorOptions});
-</script>
-...
-```
-
-**Unacceptable PHTML template**
-
-```php
-<?php echo $this->getAfterElementHtml(); ?>
-```
 
 ## PHTML templates and PHP files
 
@@ -440,6 +379,23 @@ public function getSelectorOptions()
 ```php
 ...
 <div data-mage-init="{treeSuggest: [<?php echo $this->getSelectorOptions(); ?>]}"></div>
+...
+```
+
+or
+
+**Acceptable PHTML template**
+
+```php
+...
+<div data-role="treeSuggest"></div>
+<script type="text/x-magento-init">
+{
+    "[data-role='treeSuggest']": {
+        "treeSuggest": <?php echo $this->getSelectorOptions(); ?>
+    }
+}
+</script>
 ...
 ```
 

@@ -23,15 +23,8 @@ pages:
         - label: Pro develop and deploy workflow
           url: /cloud/architecture/pro-develop-deploy-workflow.html
 
-        - label: Pro architecture (legacy)
-          url: /cloud/architecture/pro-architecture-legacy.html
-
-        - label: Add Staging and Production to Pro projects UI
-          url: /cloud/trouble/pro-env-management.html
-
         - label: Scaling architecture
           url: /cloud/architecture/architecture-scaling.html
-          include_versions: ["2.1"]
 
     - label: Technologies and requirements
       url: /cloud/requirements/cloud-requirements.html
@@ -305,6 +298,9 @@ pages:
         - label: Project structure
           url: /cloud/project/project-start.html
 
+        - label: Log locations
+          url: /cloud/project/log-locations.html
+
         - label: Create and manage users
           url: /cloud/project/user-admin.html
 
@@ -374,9 +370,6 @@ pages:
         - label: Troubleshoot deployment
           url: /cloud/trouble/troubleshoot-deployment.html
 
-        - label: View logs for troubleshooting
-          url: /cloud/trouble/environments-logs.html
-
         - label: Incorrect credentials
           url: /cloud/trouble/trouble_ce-creds.html
 
@@ -385,9 +378,6 @@ pages:
 
         - label: Component deployment failure
           url: /cloud/trouble/trouble_comp-deploy-fail.html
-
-        - label: Redis troubleshooting
-          url: /cloud/trouble/redis-troubleshooting.html
 
         - label: Reset cron jobs
           url: /cloud/trouble/reset-cron-jobs.html
@@ -414,10 +404,6 @@ pages:
 
         - label: Theme troubleshooting
           url: /cloud/trouble/theme-troubleshooting.html
-
-        - label: Message queues
-          url: /cloud/trouble/message-queues.html
-          exclude_versions: ["2.0"]
 
     - label: Upgrades and patches
       url: /cloud/project/project-upgrade-parent.html

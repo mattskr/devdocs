@@ -7,12 +7,9 @@ functional_areas:
  - Theme
 ---
 
-## Overview
-
 Use the dropdown widget to display custom content on the storefront.
 
 Widget source file is [lib/web/mage/dropdowns.js].
-
 
 **Usages:**
 - [Shipping policy]
@@ -95,7 +92,7 @@ Because the dropdown widget is not formatted by default, use [LESS mixin `.lib-d
     @_icon-font-vertical-align: @dropdown-toggle-icon__font-vertical-align,
     @_icon-font-text-hide: @dropdown-toggle-icon__text-hide
 ) {
-    // ... 
+    // ...
 }
 ```
 
@@ -133,7 +130,6 @@ $('.magento__dropdown-widget').dropdown();
 -  [menu](#d_menu)
 -  [activeClass](#d_activeClass)
 
-
 ### `parent` {#d_parent}
 
 The parent element that initialized the widget. If not specified, the widget locates the element using the `.parent()` jQuery method.
@@ -146,7 +142,6 @@ The parent element that initialized the widget. If not specified, the widget loc
 
 **Default value**: `null`
 
-
 ### `autoclose` {#d_autoclose}
 
 Determines whether to close the dropdown menu when the user clicks outside of the dropdown scope.
@@ -154,7 +149,6 @@ Determines whether to close the dropdown menu when the user clicks outside of th
 **Type**: Boolean
 
 **Default value**: `true`
-
 
 ### `btnArrow` {#d_btnArrow}
 
@@ -164,7 +158,6 @@ Determines whether to close the dropdown menu when the user clicks outside of th
 
 **Default value**: `.arrow`
 
-
 ### `menu` {#d_menu}
 
 A jQuery selector that represents the dropdown's menu element. `menu` must be inside the `parent` element.
@@ -173,7 +166,6 @@ A jQuery selector that represents the dropdown's menu element. `menu` must be in
 
 **Default value**: `[data-target="dropdown"]`
 
-
 ### `activeClass` {#d_activeClass}
 
 Given class is added to the widget element when the menu is visible.
@@ -181,7 +173,6 @@ Given class is added to the widget element when the menu is visible.
 **Type**: String
 
 **Default value**: `active`
-
 
 ## Result
 
