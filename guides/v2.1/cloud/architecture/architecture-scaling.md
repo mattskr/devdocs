@@ -9,7 +9,7 @@ The Cloud infrastructure scales according to your resource needs to achieve grea
 
 ## Split architecture
 
-Historically, the Pro architecture consisted of 3 nodes, each containing a full tech stack. The scalable infrastructure provides a tiered solution with a minimum of 6 nodes: 3 nodes for the web server and 3 nodes for the database and other services. This split architecture provides the capability to scale tiers independently to achieve an optimal balance of performance. The database tier scales vertically (increases in size), and the web tier scales horizontally (increases instance count) and vertically (changes instance type and size).
+Historically, the Pro architecture consisted of 3 nodes, each containing a full tech stack. Now, the scalable infrastructure provides a tiered solution with a minimum of 6 nodes: 3 nodes for the web server and 3 nodes for the database and other services. This split architecture provides the capability to scale tiers independently to achieve an optimal balance of performance. The database tier scales vertically (increases in size), and the web tier scales horizontally (increases instance count) and vertically (changes instance type and size).
 
 ### Database tier scaling
 
